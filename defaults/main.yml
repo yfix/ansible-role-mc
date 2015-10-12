@@ -1,0 +1,4 @@
+---
+users:
+  - dir: /home/vagrant
+  - dir: /root
