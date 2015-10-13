@@ -7,5 +7,5 @@
   with_items: "{{ users }}"
 
 - name: Copy ini file template
-  template: src=templates/mc.ini.j2 dest="{{ item.dir }}/.config/mc/ini"
+  template: src=mc.ini.j2 dest="{{ item.dir }}/.config/mc/ini"
   with_items: "{{ users }}"
