@@ -9,3 +9,9 @@
 - name: Copy ini file template
   template: src=mc.ini.j2 dest="{{ item.dir }}/.config/mc/ini"
   with_items: "{{ users }}"
+
+- name: set mcedit as default editor
+  shell: update-alternatives --set editor /usr/bin/mcedit
+  tags:
+    - editor
+    - defaults
